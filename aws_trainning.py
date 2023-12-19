@@ -6,8 +6,20 @@ import random
 hits, mistakes = [], []
 
 
+def logo():
+    print(
+        """
+            ╔═╗╦ ╦╔═╗  ╔╦╗┬─┐┌─┐┬┌┐┌┌┐┌┬┌┐┌┌─┐  ╔═╗ ┬ ┬┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+            ╠═╣║║║╚═╗   ║ ├┬┘├─┤││││││││││││ ┬  ║═╬╗│ │├┤ └─┐ │ ││ ││││└─┐
+            ╩ ╩╚╩╝╚═╝   ╩ ┴└─┴ ┴┴┘└┘┘└┘┴┘└┘└─┘  ╚═╝╚└─┘└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
+            \n
+        P.S. "Choose two" questions need to be answered without \'/\', like AB, BC and so on...
+        """
+    )
+
+
 def read_json() -> dict:
-    json_file = "/home/anderdam/DataEngineering/scripts/aws_trainning/questions.json"
+    json_file = "questions.json"
     with open(json_file) as js:
         return json.load(js)
 
@@ -16,9 +28,10 @@ def initial_questions() -> dict:
     return read_json()
 
 
-def reduced_questions(question_to_remove):
-    original_questions = read_json()
-    return original_questions.pop(question_to_remove[0])
+def reduced_questions(question_to_remove) -> dict:
+    new_questions = read_json()
+    del new_questions[question_to_remove]
+    return new_questions
 
 
 def get_question(questions_to_choose_from) -> tuple:
@@ -28,8 +41,8 @@ def get_question(questions_to_choose_from) -> tuple:
     question_number = f"Question {random_number}"
     question = questions_list[question_number][0]
     right_answer = questions_list[question_number][1]
-    checked = questions_list[question_number][2]  # Use the information or remove access
-    return question_number, question, right_answer, checked
+    check = questions_list[question_number][2]  # Use the information or remove access
+    return question_number, question, right_answer, check
 
 
 def score(hit, mistake):
@@ -37,14 +50,13 @@ def score(hit, mistake):
     #########################################
     ### Score: Rights - {len(hit)} X Mistakes - {len(mistake)} ###
     #########################################
-
     """
 
 
-def start(question_tuple):
-    question_number, display_question, right_answer, checked = question_tuple
+def start(question_tuple, limit):
+    question_number, display_question, right_answer, check = question_tuple
 
-    limit = len(initial_questions())
+    limit = limit
 
     print(question_number, f"{limit}")
     print(display_question)
@@ -52,27 +64,21 @@ def start(question_tuple):
 
     user_answer = input("Enter a option: ")
     print("\n")
-    if user_answer == right_answer:
+    if user_answer.upper() == right_answer.upper():
         hits.append(question_number)
         print("*** CORRECT ***")
-        # Uncomment and utilize information if needed
-        # if checked:
-        #     print(f"Checked!")
     else:
         mistakes.append(question_number)
         print("!!! WRONG !!!")
         print(f"Correct answer was: {right_answer}")
-        # Uncomment and utilize information if needed
-        # if checked:
-        #     print(f"Checked!")
+        print(check)
 
     print(score(hits, mistakes))
 
-    next_question = input("Continue to next question (yes/no)? ").lower()
-    if next_question == "yes":
+    next_question = input("Continue to next question ([Y]es/[N]o)? ").lower()
+    if next_question == "yes" or next_question == "y":
         limit -= 1
-        question_to_remove = get_question(initial_questions())
-        start(question_to_remove)
+        start(get_question(reduced_questions(question_number)), limit=limit)
         # TODO Maybe add a stop condition based on limit or dictionary size
     else:
         print("### Fim de jogo ###\n")
@@ -80,4 +86,5 @@ def start(question_tuple):
 
 
 if __name__ == "__main__":
-    start(get_question(initial_questions()))
+    logo()
+    start(get_question(initial_questions()), limit=len(initial_questions()))
