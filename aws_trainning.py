@@ -9,10 +9,10 @@ hits, mistakes = [], []
 def logo():
     print(
         """
-            ╔═╗╦ ╦╔═╗  ╔╦╗┬─┐┌─┐┬┌┐┌┌┐┌┬┌┐┌┌─┐  ╔═╗ ┬ ┬┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
-            ╠═╣║║║╚═╗   ║ ├┬┘├─┤││││││││││││ ┬  ║═╬╗│ │├┤ └─┐ │ ││ ││││└─┐
-            ╩ ╩╚╩╝╚═╝   ╩ ┴└─┴ ┴┴┘└┘┘└┘┴┘└┘└─┘  ╚═╝╚└─┘└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
-            \n
+        ╔═╗╦ ╦╔═╗  ╔═╗┬─┐┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐┬─┐  ╔╦╗┬─┐┌─┐┬┌┐┌┌┐┌┬┌┐┌┌─┐
+        ╠═╣║║║╚═╗  ╠═╝├┬┘├─┤│   │ ││ ││││├┤ ├┬┘   ║ ├┬┘├─┤││││││││││││ ┬
+        ╩ ╩╚╩╝╚═╝  ╩  ┴└─┴ ┴└─┘ ┴ ┴└─┘┘└┘└─┘┴└─   ╩ ┴└─┴ ┴┴┘└┘┘└┘┴┘└┘└─┘
+        \n
         P.S. "Choose two" questions need to be answered without \'/\', like AB, BC and so on...
         """
     )
@@ -58,7 +58,7 @@ def start(question_tuple, limit):
 
     limit = limit
 
-    print(question_number, f"{limit}")
+    print(question_number, f"(Remainning: {limit})")
     print(display_question)
     print("")
 
@@ -75,7 +75,7 @@ def start(question_tuple, limit):
 
     print(score(hits, mistakes))
 
-    next_question = input("Continue to next question ([Y]es/[N]o)? ").lower()
+    next_question = input("Continue to next question ([Y]es/[N]o)? \n").lower()
     if next_question == "yes" or next_question == "y":
         limit -= 1
         start(get_question(reduced_questions(question_number)), limit=limit)
@@ -87,4 +87,7 @@ def start(question_tuple, limit):
 
 if __name__ == "__main__":
     logo()
-    start(get_question(initial_questions()), limit=len(initial_questions()))
+    try:
+        start(get_question(initial_questions()), limit=len(initial_questions()))
+    except KeyboardInterrupt:
+        print("\nThanks for your time and good luck in your certification :) ")

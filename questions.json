@@ -140,7 +140,7 @@
   "Question 29": [
     "Which tasks are customer responsibilities, according to the AWS shared responsibility model? (Choose two.)\nA. Configure the AWS provided security group firewall.\nB. Classify company assets in the AWS Cloud.\nC. Determine which Availability Zones to use for Amazon S3 buckets.\nD. Patch or upgrade Amazon DynamoDB.\nE. Select Amazon EC2 instances to run AWS Lambda on.\n",
     "AB",
-    "Not Checked"
+    "See: https://aws.amazon.com/compliance/shared-responsibility-model/"
   ],
   "Question 30": [
     "Which of the following are pillars of the AWS Well-Architected Framework? (Choose two.)\nA. Availability\nB. Reliability\nC. Scalability\nD. Responsive design\nE. Operational excellence\n",
@@ -370,7 +370,7 @@
   "Question 75": [
     "A company wants to manage its AWS Cloud resources through a web interface.\nWhich AWS service will meet this requirement?\nA. AWS Management Console\nB. AWS CLI\nC. AWS SDK\nD. AWS Cloud9\n",
     "A",
-    "Not Checked"
+    "See: https://aws.amazon.com/getting-started/hands-on/getting-started-with-aws-management-console/"
   ],
   "Question 76": [
     "Which of the following are advantages of the AWS Cloud? (Choose two.)\nA. Trade variable expenses for capital expenses\nB. High economies of scale\nC. Launch globally in minutes\nD. Focus on managing hardware infrastructure\nE. Overprovision to ensure capacity\n",
@@ -435,7 +435,7 @@
   "Question 88": [
     "Which responsibility belongs to AWS when a company hosts its databases on Amazon EC2 instances?\nA. Database backups\nB. Database software patches\nC. Operating system patches\nD. Operating system installations\n",
     "D",
-    "Not Checked"
+    "See: https://aws.amazon.com/compliance/shared-responsibility-model/"
   ],
   "Question 89": [
     "Which of the following are advantages of moving to the AWS Cloud? (Choose two.)\nA. The ability to turn over the responsibility for all security to AWS.\nB. The ability to use the pay-as-you-go model.\nC. The ability to have full control over the physical infrastructure.\nD. No longer having to guess what capacity will be required.\nE. No longer worrying about users access controls.\n",
@@ -465,7 +465,7 @@
   "Question 94": [
     "Using AWS Identity and Access Management (IAM) to grant access only to the resources needed to perform a task is a concept known as:\nA. restricted access.\nB. as-needed access.\nC. least privilege access.\nD. token access.\n",
     "C",
-    "Not Checked"
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege"
   ],
   "Question 95": [
     "Which AWS service or tool can be used to set up a firewall to control traffic going into and coming out of an Amazon VPC subnet?\nA. Security group\nB. AWS WAF\nC. AWS Firewall Manager\nD. Network ACL\n",
