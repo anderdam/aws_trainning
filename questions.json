@@ -39,12 +39,12 @@
   ],
   "Question 9": [
     " Which AWS services or tools can identify rightsizing opportunities for Amazon EC2 instances? (Choose two.)\n\n    A. AWS Cost Explorer\n    B. AWS Billing Conductor\n    C. Amazon CodeGuru\n    D. Amazon SageMaker\n    E. AWS Compute Optimizer ",
-    "A/E",
+    "AE",
     "See: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html"
   ],
   "Question 10": [
     " Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)\n\n    A. Providing high-performance container orchestration\n    B. Creating and rotating encryption keys\n    C. Detecting underutilized resources to save costs\n    D. Improving security by proactively monitoring the AWS environment\n    E. Implementing enforced tagging across AWS resources\n\n",
-    "C/D",
+    "CD",
     "See: https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html"
   ],
   "Question 11": [
@@ -64,7 +64,7 @@
   ],
   "Question 14": [
     " A company is using a central data platform to manage multiple types of data for its customers. The company wants to use AWS services to discover, transform, and visualize the data.\nWhich combination of AWS services should the company use to meet these requirements? (Choose two.)\n\n    A. AWS Glue\n    B. Amazon Elastic File System (Amazon EFS)\n    C. Amazon Redshift\n    D. Amazon QuickSight\n    E. Amazon Quantum Ledger Database (Amazon QLDB)\n\n",
-    "A/D",
+    "AD",
     "See: https://docs.aws.amazon.com/glue/ \nhttps://docs.aws.amazon.com/quicksight/"
   ],
   "Question 15": [
