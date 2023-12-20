@@ -20,8 +20,8 @@
     "See: https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html"],
   "Question 5": [
     " Which option is a customer responsibility when using Amazon DynamoDB under the AWS Shared Responsibility Model?\n\n    A. Physical security of DynamoDB\n    B. Patching of DynamoDB\n    C. Access to DynamoDB tables\n    D. Encryption of data at rest in DynamoDB ",
-    "***",
-    "See: "],
+    "C",
+    "See: https://aws.amazon.com/compliance/shared-responsibility-model/"],
   "Question 6": [
     " Which option is a perspective that includes foundational capabilities of the AWS Cloud Adoption Framework (AWS CAF)?\n\n    A. Sustainability\n    B. Performance efficiency\n    C. Governance\n    D. Reliability\n\n",
     "C",
@@ -469,8 +469,8 @@
   ],
   "Question 95": [
     "Which AWS service or tool can be used to set up a firewall to control traffic going into and coming out of an Amazon VPC subnet?\nA. Security group\nB. AWS WAF\nC. AWS Firewall Manager\nD. Network ACL\n",
-    "***",
-    "See: "
+    "D",
+    "See: https://docs.aws.amazon.com/AmazonS3/latest/userguide/acl-overview.html"
   ],
   "Question 96": [
     "A company wants to operate a data warehouse to analyze data without managing the data warehouse infrastructure.\nWhich AWS service will meet this requirement?\nA. Amazon Aurora\nB. Amazon Redshift Serverless\nC. AWS Lambda\nD. Amazon RDS\n",
