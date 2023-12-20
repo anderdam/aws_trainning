@@ -1,0 +1,914 @@
+{
+  "AWS": {
+    "accessanalyzer": {
+      "description": "Analyzes resource access patterns to identify potential security risks and compliance violations.",
+      "useCase": "Detecting overly permissive IAM policies, ensuring adherence to compliance standards"
+    },
+    "account": {
+      "description": "Manages your AWS account, including IAM users, billing, and security settings.",
+      "useCase": "Creating and managing AWS accounts, setting up billing preferences, configuring security controls"
+    },
+    "acm": {
+      "description": "Provides managed SSL/TLS certificates for securing web applications and services.",
+      "useCase": "Securing websites and APIs with HTTPS, managing certificate lifecycles"
+    },
+    "acm-pca": {
+      "description": "Creates and manages private certificate authorities (CAs) for issuing custom SSL/TLS certificates.",
+      "useCase": "Establishing private CAs for internal use, issuing certificates for IoT devices or private networks"
+    },
+    "alexaforbusiness": {
+      "description": "Brings Alexa's voice capabilities to your workplace for tasks such as scheduling meetings, controlling conference room equipment, and making calls.",
+      "useCase": "Improving workplace productivity, enhancing collaboration, streamlining meeting management"
+    },
+    "amp": {
+      "description": "Provides application performance monitoring and observability tools for troubleshooting and optimizing application performance.",
+      "useCase": "Identifying and resolving performance bottlenecks, monitoring application health, optimizing resource utilization"
+    },
+    "amplify": {
+      "description": "Simplifies frontend and backend development and hosting for web and mobile applications.",
+      "useCase": "Building and deploying web and mobile apps quickly, managing app content and user authentication, integrating with backend services"
+    },
+    "amplifybackend": {
+      "description": "Provides backend services for Amplify applications, such as user authentication, data storage, and API access.",
+      "useCase": "Creating and managing backend resources for Amplify apps, integrating with databases and other services"
+    },
+    "amplifyuibuilder": {
+      "description": "Visually builds user interfaces for web applications using pre-built components and drag-and-drop functionality.",
+      "useCase": "Rapidly prototyping and building UIs without extensive coding, creating responsive and adaptive layouts"
+    },
+    "apigateway": {
+      "description": "Creates, publishes, and manages REST and WebSocket APIs at any scale.",
+      "useCase": "Building APIs for web and mobile applications, integrating with backend services, managing API traffic and access control"
+    },
+    "apigatewaymanagementapi": {
+      "description": "Provides programmatic access to manage Amazon API Gateway entities.",
+      "useCase": "Automating API Gateway tasks, integrating API management with other workflows"
+    },
+    "apigatewayv2": {
+      "description": "Next-generation API gateway for building and managing high-performance HTTP APIs.",
+      "useCase": "Building modern APIs with enhanced features and performance, handling large-scale API traffic efficiently"
+    },
+    "appconfig": {
+      "description": "Centrally manages application configuration data and features.",
+      "useCase": "Storing and distributing app configuration settings, feature flags, and other dynamic configuration"
+    },
+    "appconfigdata": {
+      "description": "Stores configuration data for AppConfig.",
+      "useCase": "Managing configuration data for AppConfig applications, versioning and tracking changes"
+    },
+    "appfabric": {
+      "description": "Simplifies the development and deployment of microservices-based applications.",
+      "useCase": "Building and managing distributed applications, coordinating services and data flows"
+    },
+    "appflow": {
+      "description": "Integrates data from SaaS applications with other AWS services.",
+      "useCase": "Building data pipelines between SaaS apps and AWS, synchronizing data for analytics and business processes"
+    },
+    "appintegrations": {
+      "description": "Integrates data from multiple sources and automates workflows.",
+      "useCase": "Building data-driven applications, connecting different systems and services, automating business processes"
+    },
+    "application-autoscaling": {
+      "description": "Automatically scales resources based on application"
+    },
+    "application-insights": {
+      "description": "Monitors and analyzes the health and performance of .NET and Java applications.",
+      "useCase": "Identifying and troubleshooting application issues, optimizing performance, monitoring user behavior"
+    },
+    "applicationcostprofiler": {
+      "description": "Provides visibility into the cost of running applications on AWS.",
+      "useCase": "Optimizing application costs, identifying cost-saving opportunities, tracking resource usage"
+    },
+    "appmesh": {
+      "description": "Provides a service mesh to manage and monitor microservices.",
+      "useCase": "Deploying and managing microservices at scale, improving service communication and observability"
+    },
+    "apprunner": {
+      "description": "Fully manages containerized web applications and APIs.",
+      "useCase": "Deploying and running containerized apps without managing infrastructure, automatically scaling based on demand"
+    },
+    "appstream": {
+      "description": "Provides secure streaming of desktop applications to any device.",
+      "useCase": "Enabling remote access to desktop apps, delivering software as a service, securely streaming sensitive data"
+    },
+    "appsync": {
+      "description": "Builds GraphQL APIs to access data from different sources.",
+      "useCase": "Creating flexible and efficient APIs, combining data from multiple backends, simplifying client-side development"
+    },
+    "arc-zonal-shift": {
+      "description": "Moves workloads from one AWS Availability Zone to another.",
+      "useCase": "Improving workload availability and resilience, distributing workloads across multiple zones"
+    },
+    "athena": {
+      "description": "Queries data in Amazon S3 using standard SQL.",
+      "useCase": "Analyzing large datasets without loading them into a database, performing ad-hoc queries and analysis"
+    },
+    "auditmanager": {
+      "description": "Automates compliance auditing and evidence collection for AWS accounts.",
+      "useCase": "Meeting compliance requirements, simplifying audits, maintaining continuous compliance"
+    },
+    "autoscaling": {
+      "description": "Automatically scales Amazon EC2 instances based on demand.",
+      "useCase": "Optimizing resource utilization, handling varying workloads, ensuring application availability"
+    },
+    "autoscaling-plans": {
+      "description": "Creates scaling plans to automatically scale resources based on predefined schedules and rules.",
+      "useCase": "Predicting and preparing for traffic changes, automating scaling for predictable workloads"
+    },
+    "aws": {
+      "description": "Root service for AWS services.",
+      "useCase": "Accessing and managing AWS resources, interacting with the AWS platform"
+    },
+    "b2bi": {
+      "description": "Provides insights and recommendations to optimize AWS spending.",
+      "useCase": "Identifying cost-saving opportunities, optimizing resource usage, forecasting future costs"
+    },
+    "backup": {
+      "description": "Centrally manages and automates backups for AWS services and on-premises resources.",
+      "useCase": "Protecting data from loss and corruption, meeting compliance requirements, simplifying backup management"
+    },
+    "backup-gateway": {
+      "description": "Connects on-premises storage to AWS Backup for seamless cloud backups.",
+      "useCase": "Backing up on-premises data to AWS, extending AWS Backup capabilities to on-premises environments"
+    },
+    "backupstorage": {
+      "description": "Provides storage for AWS Backup backups.",
+      "useCase": "Storing backups securely and cost-effectively, managing backup retention policies"
+    },
+    "batch": {
+      "description": "Runs batch computing workloads on AWS.",
+      "useCase": "Processing large datasets, running high-performance computing (HPC) jobs, automating tasks"
+    },
+    "bcm-data-exports": {
+      "description": "Exports data from AWS Backup for compliance and archiving purposes.",
+      "useCase": "Meeting compliance requirements, archiving backups for long-term storage, analyzing backup data"
+    },
+    "bedrock": {
+      "description": "Provides a secure and compliant foundation for building applications on AWS.",
+      "useCase": "Meeting security and compliance requirements, simplifying application deployment, automating security best practices"
+    },
+    "bedrock-agent": "",
+    "bedrock-agent-runtime": "",
+    "bedrock-runtime": "",
+    "billingconductor": {
+      "description": "Simplifies billing management for large enterprises with multiple AWS accounts.",
+      "useCase": "Centralizing billing, allocating costs to different business units, managing budgets and spending"
+    },
+    "braket": {
+      "description": "Provides a managed service for running quantum computing experiments.",
+      "useCase": "Exploring quantum computing applications, developing quantum algorithms, simulating quantum systems"
+    },
+    "budgets": {
+      "description": "Creates budgets to track AWS costs and receive alerts when spending exceeds limits.",
+      "useCase": "Managing AWS costs, identifying overspending, forecasting future costs"
+    },
+    "ce": {
+      "description": "Provides a cost-effective way to run containerized applications on AWS.",
+      "useCase": "Deploying and running containerized apps without managing infrastructure, optimizing costs for container workloads"
+    },
+    "chime": {
+      "description": "Provides communications services for meetings, chat, and business calling.",
+      "useCase": "Enabling remote work and collaboration, enhancing team communication, streamlining business communications"
+    },
+    "chime-sdk-identity": "",
+    "chime-sdk-media-pipelines": "",
+    "chime-sdk-meetings": "",
+    "chime-sdk-messaging": "",
+    "chime-sdk-voice": "",
+    "cleanrooms": {
+      "description": "Provides a secure environment for sharing sensitive data between multiple parties.",
+      "useCase": "Collaborating on sensitive data analysis, protecting intellectual property, enabling secure data sharing"
+    },
+    "cleanroomsml": {
+      "description": "Trains machine learning models on sensitive data in a secure cleanroom environment.",
+      "useCase": "Building ML models without compromising data privacy, enabling collaborative ML on sensitive datasets"
+    },
+    "cloud9": {
+      "description": "Provides a cloud-based IDE for writing, running, and debugging code.",
+      "useCase": "Developing applications in the cloud, collaborating on code projects, sharing development environments"
+    },
+    "cloudcontrol": {
+      "description": "Creates and manages AWS resources using code.",
+      "useCase": "Automating infrastructure provisioning, managing complex infrastructure environments, enforcing infrastructure as code practices"
+    },
+    "clouddirectory": {
+      "description": "Provides a hierarchical data store for managing large amounts of structured and semi-structured data.",
+      "useCase": "Building directories and catalogs, managing relationships between entities, storing and querying complex data"
+    },
+    "cloudformation": {
+      "description": "Provides a way to model and provision AWS resources using templates.",
+      "useCase": "Automating infrastructure provisioning, managing infrastructure as code, deploying applications consistently"
+    },
+    "cloudfront": {
+      "description": "A content delivery network (CDN) that delivers content to users with low latency and high transfer speeds.",
+      "useCase": "Accelerating website and application performance, reducing load on origin servers, improving global reach"
+    },
+    "cloudfront-keyvaluestore": "",
+    "cloudhsm": "",
+    "cloudhsmv2": {
+      "description": "Manages hardware security modules (HSMs) in the cloud.",
+      "useCase": "Protecting sensitive data and keys, meeting compliance requirements, offloading cryptographic operations"
+    },
+    "cloudsearch": "",
+    "cloudsearchdomain": "",
+    "cloudtrail": {
+      "description": "Records API calls made to AWS services.",
+      "useCase": "Auditing AWS account activity, tracking changes to resources, investigating security incidents"
+    },
+    "cloudtrail-data": "",
+    "cloudwatch": {
+      "description": "Monitors AWS resources and applications.",
+      "useCase": "Collecting and analyzing metrics, setting alarms, troubleshooting issues, optimizing performance"
+    },
+    "codeartifact": {
+      "description": "Manages and stores software packages for development teams.",
+      "useCase": "Sharing and reusing code, managing dependencies, automating package distribution"
+    },
+    "codebuild": {
+      "description": "Builds and tests code.",
+      "useCase": "Automating continuous integration and delivery (CI/CD) pipelines, building and testing code changes"
+    },
+    "codecatalyst": "",
+    "codecommit": {
+      "description": "Provides a fully managed source control service.",
+      "useCase": "Storing and managing code, collaborating on code projects, tracking code changes"
+    },
+    "codeguru-reviewer": {
+      "description": "Automates code reviews and identifies potential issues.",
+      "useCase": "Improving code quality, reducing defects, enforcing coding best practices"
+    },
+    "codeguru-security": {
+      "description": "Identifies security vulnerabilities in code.",
+      "useCase": "Protecting applications from security threats, detecting vulnerabilities early in the development process"
+    },
+    "codeguruprofiler": {
+      "description": "Identifies performance bottlenecks in code.",
+      "useCase": "Optimizing application performance, improving resource utilization, reducing costs"
+    },
+    "codepipeline": {
+      "description": "Builds, tests, and deploys code.",
+      "useCase": "Automating CI/CD pipelines, streamlining the software delivery process, ensuring quality and consistency"
+    },
+    "codestar": {
+      "description": "Sets up and manages development projects on AWS.",
+      "useCase": "Quickly starting new projects, managing project resources, tracking progress"
+    },
+    "cognito-identity": {
+      "description": "Manages user identities and authentication for web and mobile apps.",
+      "useCase": "Allowing users to sign up and sign in to apps, managing user profiles and permissions, integrating with social identity providers"
+    },
+    "cognito-idp": {
+      "description": "Provides a user directory for managing user identities and authentication.",
+      "useCase": "Centralizing user management for multiple applications, supporting different authentication methods, integrating with SAML providers"
+    },
+    "comprehend": {
+      "description": "Extracts insights from text using natural language processing (NLP).",
+      "useCase": "Analyzing customer feedback, understanding social media sentiment, identifying key phrases and entities"
+    },
+    "comprehendmedical": {
+      "description": "Extracts medical insights from text using NLP.",
+      "useCase": "Analyzing clinical notes, identifying patient conditions and symptoms, extracting medication information"
+    },
+    "compute-optimizer": {
+      "description": "Recommends optimal EC2 instance types and purchasing options to save money.",
+      "useCase": "Optimizing EC2 costs, reducing overprovisioning, improving resource utilization"
+    },
+    "connect": {
+      "description": "Provides a cloud-based contact center solution.",
+      "useCase": "Building and managing contact centers, routing calls and chats, providing customer support"
+    },
+    "controltower": {
+      "description": "Sets up and governs a multi-account AWS environment.",
+      "useCase": "Enforcing security and compliance best practices, automating account creation and configuration, managing multiple accounts centrally"
+    },
+    "cost-optimization-hub": "",
+    "cur": {
+      "description": "Provides billing and cost management tools for AWS.",
+      "useCase": "Tracking AWS spending, identifying cost-saving opportunities, optimizing resource usage"
+    },
+    "customer-profiles": {
+      "description": "Unifies customer data from multiple sources to create a single customer view.",
+      "useCase": "Personalizing customer experiences, targeting marketing campaigns, improving customer service"
+    },
+    "databrew": {
+      "description": "Cleans and prepares data for analysis.",
+      "useCase": "Cleaning and normalizing data, identifying and correcting errors, transforming data for analysis"
+    },
+    "dataexchange": {
+      "description": "Finds, subscribes to, and uses third-party data in the cloud.",
+      "useCase": "Enriching internal data with external data, accessing unique datasets, accelerating data-driven innovation"
+    },
+    "datapipeline": {
+      "description": "Orchestrates data movement and processing activities.",
+      "useCase": "Building and managing data pipelines, automating data workflows, integrating data from different sources"
+    },
+    "datasync": {
+      "description": "Transfers large amounts of data between on-premises storage and AWS storage services.",
+      "useCase": "Migrating data to AWS, syncing data between on-premises and AWS, moving large datasets efficiently"
+    },
+    "datazone": "",
+    "dax": {
+      "description": "Fully managed, in-memory cache for DynamoDB that delivers up to 10x faster performance.",
+      "useCase": "Accelerating read-heavy workloads, improving application responsiveness, reducing database load"
+    },
+    "detective": {
+      "description": "Identifies and investigates security threats in your AWS environment.",
+      "useCase": "Protecting against unauthorized access, detecting data exfiltration, investigating suspicious activity"
+    },
+    "devicefarm": {
+      "description": "Tests and interacts with mobile, web, and desktop applications on real devices.",
+      "useCase": "Automating app testing, ensuring app quality across different devices, debugging and troubleshooting app issues"
+    },
+    "devops-guru": {
+      "description": "Provides insights and recommendations to improve operational performance and reliability of applications on AWS.",
+      "useCase": "Identifying and resolving operational issues, optimizing application performance, preventing outages"
+    },
+    "directconnect": {
+      "description": "Establishes a dedicated network connection between your on-premises network and AWS.",
+      "useCase": "Reducing network latency, increasing bandwidth, improving security"
+    },
+    "dlm": {
+      "description": "Manages the lifecycle of AWS resources to reduce costs and improve resource utilization.",
+      "useCase": "Automating resource cleanup, enforcing retention policies, optimizing storage costs"
+    },
+    "dms": {
+      "description": "Migrates databases to AWS easily and securely.",
+      "useCase": "Moving databases to AWS without downtime, replicating data between databases, consolidating databases"
+    },
+    "dynamodb": {
+      "description": "Provides a fully managed NoSQL database service.",
+      "useCase": "Storing and retrieving large amounts of data, building highly scalable applications, supporting flexible data models"
+    },
+    "dynamodbstreams": {
+      "description": "Captures data changes in DynamoDB tables.",
+      "useCase": "Auditing data changes, triggering actions based on updates, replicating data to other systems"
+    },
+    "ebs": {
+      "description": "Provides block storage volumes for EC2 instances.",
+      "useCase": "Storing persistent data, booting EC2 instances, extending storage capacity"
+    },
+    "ec2": {
+      "description": "Provides resizable compute capacity in the cloud.",
+      "useCase": "Running web servers, hosting applications, building scalable infrastructure"
+    },
+    "ec2-instance-connect": "",
+    "ecr": {
+      "description": "Stores and manages container images.",
+      "useCase": "Building and deploying containerized applications, sharing container images across teams, automating container workflows"
+    },
+    "ecr-public": "",
+    "ecs": {
+      "description": "Manages containerized applications at scale.",
+      "useCase": "Deploying and running containerized apps, orchestrating containers across multiple EC2 instances, automating container scaling"
+    },
+    "efs": {
+      "description": "Provides a managed file system for EC2 instances.",
+      "useCase": "Sharing files between EC2 instances, storing application data, persisting data across instance failures"
+    },
+    "eks": {
+      "description": "Manages Kubernetes clusters on AWS.",
+      "useCase": "Deploying and managing containerized applications, running Kubernetes workloads on AWS, automating cluster operations"
+    },
+    "eks-auth": "",
+    "elastic-inference": "",
+    "elasticache": {
+      "description": "Provides in-memory cache in the cloud.",
+      "useCase": "Accelerating application performance, reducing database load, improving user experience"
+    },
+    "elasticbeanstalk": {
+      "description": "Deploys and manages web applications on AWS.",
+      "useCase": "Quickly deploying web apps without managing infrastructure, scaling apps automatically, simplify application operations"
+    },
+    "elastictranscoder": {
+      "description": "Converts video formats for different devices and platforms.",
+      "useCase": "Preparing videos for delivery across different devices, creating renditions for streaming and download, optimizing video formats for delivery networks"
+    },
+    "elb": {
+      "description": "Distributes traffic across multiple Amazon EC2 instances.",
+      "useCase": "Improving application scalability and availability, handling traffic spikes, load balancing across multiple servers"
+    },
+    "elasticmq": {
+      "description": "Provides a fully managed message queue service.",
+      "useCase": "Building decoupled applications, asynchronous messaging between different services, handling peak loads efficiently"
+    },
+    "elasticsearch-service": {
+      "description": "Provides a managed service for Elasticsearch, a popular open-source search engine.",
+      "useCase": "Building search-driven applications, analyzing large datasets of text and logs, enriching applications with search capabilities"
+    },
+    "emr": {
+      "description": "Runs Hadoop, Spark, and other big data frameworks on AWS.",
+      "useCase": "Analyzing large datasets, running big data processing jobs, building data pipelines for analytics"
+    },
+    "emr-containers": "",
+    "events": {
+      "description": "Manages and routes event data in a serverless fashion.",
+      "useCase": "Building reactive applications, triggering actions based on events, integrating multiple cloud services"
+    },
+    "eventbridge": "",
+    "evidently": {
+      "description": "Manages A/B testing and experiments for your applications.",
+      "useCase": "Testing different features and variations, optimizing user experience, making data-driven decisions"
+    },
+    "executor": "",
+    "fargate": {
+      "description": "Runs containers without provisioning or managing servers.",
+      "useCase": "Running serverless containerized applications, simplifying container infrastructure management, achieving high availability"
+    },
+    "firehose": {
+      "description": "Delivers real-time streaming data to data lakes, analytics services, and other destinations.",
+      "useCase": "Building real-time analytics pipelines, ingesting high-volume data streams, feeding data to data warehouses and streaming services"
+    },
+    "fis": "",
+    "fleet": "",
+    "forecast": {
+      "description": "Builds and deploys machine learning models that forecast future outcomes.",
+      "useCase": "Predicting business trends, optimizing inventory levels, improving resource planning"
+    },
+    "foresight": "",
+    "fps": "",
+    "fraud-detector": {
+      "description": "Builds and uses machine learning models to detect fraudulent activity.",
+      "useCase": "Protecting against fraud in online transactions, identifying suspicious behavior, mitigating financial losses"
+    },
+    "freespaceoptimizer": "",
+    "fsx": {
+      "description": "Provides fully managed shared file storage for on-premises and cloud applications.",
+      "useCase": "Migrating and consolidating file storage to AWS, simplifying file sharing across hybrid environments, scaling file storage on demand"
+    },
+    "gamelift": {
+      "description": "Manages and scales multiplayer game servers on AWS.",
+      "useCase": "Deploying and scaling multiplayer games, managing game infrastructure, building serverless game backends"
+    },
+    "gateway-api": "",
+    "glacier": {
+      "description": "Provides secure, durable, and long-term storage for archival data.",
+      "useCase": "Archiving rarely accessed data, meeting compliance requirements, reducing storage costs for inactive data"
+    },
+    "globalaccelerator": {
+      "description": "Improves the performance of your globally distributed applications.",
+      "useCase": "Reducing latency for global users, routing traffic through the optimal network path, improving application responsiveness"
+    },
+    "glue": {
+      "description": "Extracts, transforms, and loads (ETL) data for analytics.",
+      "useCase": "Building data pipelines for analytics, preparing data for data warehouses and other analytical services, cleaning and transforming data"
+    },
+    "grafana": "",
+    "greengrass": {
+      "description": "Runs local compute, messaging, and data caching for connected devices in a secure way.",
+      "useCase": "Building IoT applications with local control and offline capabilities, reducing latency and bandwidth usage, improving security"
+    },
+    "greengrassv2": "",
+    "groundstation": {
+      "description": "Provides fully managed satellite communications.",
+      "useCase": "Downloading data from satellites, controlling satellite operations, processing and analyzing satellite data"
+    },
+    "guardduty": {
+      "description": "Detects and investigates potential threats in your AWS account.",
+      "useCase": "Protecting against unauthorized access, detecting data exfiltration, identifying malicious activity"
+    },
+    "health": {
+      "description": "Monitors the health of your AWS resources and applications.",
+      "useCase": "Identifying and troubleshooting issues, tracking performance metrics, proactively addressing problems"
+    },
+    "healthlake": {
+      "description": "Stores, transforms, and analyzes healthcare data at petabyte scale.",
+      "useCase": "Building healthcare applications, conducting research, improving patient care"
+    },
+    "history": "",
+    "honeycode": {
+      "description": "Builds web and mobile applications without writing code.",
+      "useCase": "Creating simple applications for business tasks, automating workflows, empowering non-technical users to build apps"
+    },
+    "iam": {
+      "description": "Manages access to AWS resources.",
+      "useCase": "Controlling who can access what resources, enforcing security policies, managing user permissions"
+    },
+    "identitystore": "",
+    "imagebuilder": {
+      "description": "Automates the creation and maintenance of machine images for servers and virtual machines.",
+      "useCase": "Streamlining image creation and deployment, enforcing security and compliance standards, managing image updates"
+    },
+    "importexport": {
+      "description": "Transfers large amounts of data into and out of AWS using physical storage devices.",
+      "useCase": "Migrating large datasets to AWS, importing or exporting data for compliance or archival purposes, transferring data between AWS regions"
+    },
+    "inspector": {
+      "description": "Analyzes the security of your EC2 instances.",
+      "useCase": "Identifying vulnerabilities, ensuring compliance with security best practices, hardening your systems against attacks"
+    },
+    "inspector-scan": "",
+    "inspector2": "",
+    "internetmonitor": "",
+    "iot": {
+      "description": "Connects devices to the cloud and securely manages them.",
+      "useCase": "Building IoT applications, collecting and analyzing device data, controlling devices remotely"
+    },
+    "iot-data": "",
+    "iot-jobs-data": "",
+    "iot-roborunner": "",
+    "iot1click-devices": "",
+    "iot1click-projects": "",
+    "iotanalytics": {
+      "description": "Analyzes and processes IoT data at scale.",
+      "useCase": "Gaining insights from IoT data, building predictive models, optimizing operations"
+    },
+    "iotdeviceadvisor": {
+      "description": "Tests and validates IoT devices for reliable and secure operation.",
+      "useCase": "Ensuring device quality and compatibility, identifying and fixing issues, reducing device downtime"
+    },
+    "iotevents": {
+      "description": "Detects and responds to events from IoT devices.",
+      "useCase": "Automating actions based on IoT data, triggering alerts and notifications, building event-driven applications"
+    },
+    "iotevents-data": "",
+    "iotfleethub": "",
+    "iotfleetwise": "",
+    "iotsecuretunneling": "",
+    "iotsitewise": {
+      "description": "Collects, organizes, and analyzes industrial equipment data.",
+      "useCase": "Monitoring asset health, optimizing operations, improving predictive maintenance"
+    },
+    "iotthingsgraph": "",
+    "iottwinmaker": "",
+    "iotwireless": {
+      "description": "Manages wireless devices and networks.",
+      "useCase": "Building cellular IoT applications, connecting devices over low-power wide-area networks (LPWAN), managing device connectivity"
+    },
+    "ivs": "",
+    "ivs-realtime": "",
+    "ivschat": "",
+    "kafka": {
+      "description": "Provides a fully managed Apache Kafka service for building real-time streaming data pipelines and applications.",
+      "useCase": "Ingesting high-volume data streams, building real-time streaming analytics, integrating data across systems"
+    },
+    "kafkaconnect": "",
+    "kendra": {
+      "description": "Provides intelligent search capabilities for your applications and websites.",
+      "useCase": "Making content searchable across multiple sources, delivering relevant search results, enhancing user experience"
+    },
+    "kendra-ranking": "",
+    "keyspaces": "",
+    "kinesis": {
+      "description": "Collects, processes, and analyzes real-time streaming data.",
+      "useCase": "Building real-time applications, processing data streams from IoT devices, analyzing clickstream data"
+    },
+    "kinesis-video-archived-media": "",
+    "kinesis-video-media": "",
+    "kinesis-video-signaling": "",
+    "kinesis-video-webrtc-storage": "",
+    "kinesisanalytics": "",
+    "kinesisanalyticsv2": "",
+    "kinesisvideo": "",
+    "kms": {
+      "description": "Manages encryption keys for your data.",
+      "useCase": "Protecting sensitive data, meeting compliance requirements, controlling access to encryption keys"
+    },
+    "lambda": {
+      "description": "Runs code without provisioning or managing servers.",
+      "useCase": "Building serverless applications, automating tasks, responding to events, integrating different services"
+    },
+    "license-manager": {
+      "description": "Manages software licenses on AWS.",
+      "useCase": "Tracking software usage, enforcing licensing compliance, automating license renewals"
+    },
+    "license-manager-linux-subscriptions": "",
+    "license-manager-user-subscriptions": "",
+    "lightsail": {
+      "description": "Provides virtual servers, storage, databases, and networking for small businesses and developers.",
+      "useCase": "Building simple websites and applications, getting started with AWS quickly, experimenting with new ideas"
+    },
+    "location": "",
+    "logs": {
+      "description": "Collects and stores logs from your AWS resources for monitoring and troubleshooting.",
+      "useCase": "Identifying and resolving issues, tracking performance metrics, auditing security events"
+    },
+    "m2": {
+      "description": "Provides a managed infrastructure for building and running large-scale applications. It offers a combination of compute, storage, networking, and database resources for high-performance workloads."
+    },
+    "machinelearning": {
+      "description": "Provides a platform for building, training, and deploying machine learning models. It offers a variety of tools and algorithms for common ML tasks, as well as the ability to bring your own models."
+    },
+    "macie2": {
+      "description": "Discovers, classifies, and protects sensitive data stored in AWS. It uses machine learning to identify personally identifiable information (PII), financial data, health information, and other sensitive data."
+    },
+    "managedblockchain": {
+      "description": "Sets up and manages blockchain networks using open-source frameworks. It simplifies the process of creating and managing secure blockchain networks, allowing you to focus on building blockchain applications."
+    },
+    "managedblockchain-query": {
+      "description": "Provides a query interface for interacting with blockchain data. It allows you to easily query and retrieve data from your blockchain networks."
+    },
+    "marketplace-agreement": {
+      "description": "Manages agreements for AWS Marketplace products and services. It streamlines the process of accepting and managing agreements for third-party products and services."
+    },
+    "marketplace-catalog": {
+      "description": "Provides access to the catalog of software and services available on AWS Marketplace. It allows you to browse, search, and purchase third-party products and services."
+    },
+    "marketplace-deployment": {
+      "description": "Deploys and manages AWS Marketplace products and services. It automates the deployment and management of third-party products and services, reducing the time and effort required."
+    },
+    "mediaconnect": {
+      "description": "Provides high-quality transport of live video for broadcast and multiscreen delivery. It simplifies the process of delivering live video content to multiple destinations, ensuring high quality and reliability."
+    },
+    "mediaconvert": {
+      "description": "Converts media files from one format to another. It supports a wide range of media formats and codecs, making it easy to transcode videos for different devices and platforms."
+    },
+    "medialive": {
+      "description": "Creates live video streams for broadcast and over-the-top (OTT) delivery. It offers a variety of features for live video production, including encoding, packaging, and delivery."
+    },
+    "mediapackage": {
+      "description": "Packages and delivers video on demand (VOD) content. It simplifies the process of preparing and delivering VOD content to viewers, including encryption and DRM protection."
+    },
+    "mediastore": {
+      "description": "Provides managed storage for media files. It offers scalable and secure storage for video, audio, and image files, optimized for media workloads."
+    },
+    "mediatailor": {
+      "description": "Personalizes video content for individual viewers. It allows you to insert targeted ads, recommendations, and other dynamic content into video streams, creating a more engaging experience for viewers."
+    },
+    "medical-imaging": {
+      "description": "Provides a suite of services for storing, viewing, and analyzing medical images in the cloud. It simplifies the management and use of medical images for healthcare providers and researchers."
+    },
+    "memorydb": {
+      "description": "Provides a fully managed in-memory database service for high-performance applications. It offers fast and predictable performance for workloads that require real-time data access."
+    },
+    "meteringmarketplace": {
+      "description": "Provides a marketplace for third-party metering services that can be used to measure and track resource usage in AWS. It allows you to choose from a variety of metering services to meet your specific needs."
+    },
+    "mgh": {
+      "description": "Provides a managed service for deploying and managing AWS outposts in your on-premises environment. It simplifies the process of extending AWS to your on-premises infrastructure."
+    },
+    "mgn": {
+      "description": "Migrates and replicates your on-premises workloads to AWS without any downtime. It automates the migration process and ensures that your workloads continue to operate seamlessly during the transition."
+    },
+    "migration-hub-refactor-spaces": {
+      "description": "Provides a platform for refactoring and modernizing applications during migration to the cloud. It helps you break down monolithic applications into smaller, more manageable microservices."
+    },
+    "migrationhub-config": {
+      "description": "Provides a central place to track and manage your migration projects. It helps you organize and track your migration progress, and identify any issues that may arise."
+    },
+    "migrationhuborchestrator": {
+      "description": "Automates the migration process for large-scale applications. It coordinates the migration of multiple applications and dependencies, ensuring a smooth and efficient transition."
+    },
+    "migrationhubstrategy": {
+      "description": "Helps you develop a migration strategy for your applications. It provides recommendations on the best migration approach for each application, based on its characteristics and dependencies."
+    },
+    "mobile": {
+      "description": "Provides a set of services for building, deploying, and managing mobile applications. It includes services for authentication, push notifications, analytics, and more."
+    },
+    "mq": {
+      "description": "Provides managed message queuing services for distributed applications. It enables messaging between different parts of your applications, even if they are running on different servers or in different data centers."
+    },
+    "mturk": {
+      "description": "Provides a marketplace for crowdsourcing tasks to a global workforce. It allows you to get tasks completed quickly and cheaply by a large pool of workers."
+    },
+    "mwaa": {
+      "description": "Provides a managed service for Apache Airflow, an open-source workflow management platform. It simplifies the process of scheduling and running workflows in the cloud."
+    },
+    "neptune": {
+      "description": "Provides a fully managed graph database service for building applications that work with highly connected data. It offers fast and scalable performance for graph queries."
+    },
+    "neptunedata": {
+      "description": "Provides access to the data stored in Neptune databases. It allows you to query and visualize graph data, as well as export it to other formats."
+    },
+    "network-firewall": {
+      "description": "Provides a managed firewall service that protects your AWS resources from unauthorized access. It allows you to define firewall rules to control inbound and outbound traffic."
+    },
+    "networkmanager": {
+      "description": "Centrally manages and monitors your AWS networks. It provides a single place to view and manage your network resources, including VPCs, subnets, and VPN connections."
+    },
+    "nimble": {
+      "description": "Provides a storage service that offers sub-millisecond latency and high performance for business-critical applications. It is ideal for workloads that require fast and consistent access to data."
+    },
+    "oam": {
+      "description": "Provides a framework for defining and managing observability data in AWS. It helps you collect, analyze, and visualize data from your applications and infrastructure to identify and troubleshoot issues."
+    },
+    "omics": {
+      "description": "Provides a suite of services for storing, analyzing, and sharing genomics data. It simplifies the management and use of genomics data for researchers and healthcare providers."
+    },
+    "opensearch": {
+      "description": "Provides a fully managed service for OpenSearch, an open-source search and analytics engine. It offers fast and scalable performance for search and analytics workloads."
+    },
+    "opensearchserverless": {
+      "description": "Provides a serverless version of OpenSearch that scales automatically based on your needs. It eliminates the need to manage infrastructure, making it easy to get started with OpenSearch."
+    },
+    "opsworks": {
+      "description": "Provides a service for configuring and managing applications on AWS. It uses Chef, a popular configuration management tool, to automate the deployment and configuration of servers."
+    },
+    "opsworks-cm": {
+      "description": "Provides a service for managing Chef servers on AWS. It simplifies the process of setting up and maintaining Chef servers, making it easier to manage infrastructure using Chef."
+    },
+    "organizations": {
+      "description": "Allows you to centrally manage and govern multiple AWS accounts. It provides a hierarchical structure for your accounts, making it easier to manage access and permissions."
+    },
+    "osis": {
+      "description": "Provides a service for managing open source software (OSS) on AWS. It helps you track and manage the OSS components in your applications, ensuring that you are using them in compliance with their licenses."
+    },
+    "outposts": {
+      "description": "Provides a service that extends AWS infrastructure, services, and tools to your on-premises environment. It allows you to run AWS services on your own hardware, while still benefiting from the scalability and management of AWS."
+    },
+    "panorama": {
+      "description": "Provides a service that helps you collect and analyze data from industrial equipment. It can be used to monitor the health of equipment, optimize performance, and predict failures."
+    },
+    "payment-cryptography": {
+      "description": "Provides a service that encrypts payment data in AWS. It helps you protect sensitive payment information, such as credit card numbers and personal information."
+    },
+    "payment-cryptography-data": {
+      "description": "Provides access to the encrypted payment data stored in AWS. It allows you to decrypt and process payment data in a secure environment."
+    },
+    "pca-connector-ad": {
+      "description": "Provides a service that connects AWS Private CA to Active Directory. It allows you to issue certificates from AWS Private CA to Active Directory users and devices."
+    },
+    "personalize": {
+      "description": "Provides a service for building personalized recommendations for your users. It uses machine learning to identify patterns in user behavior and recommend relevant items."
+    },
+    "personalize-events": {
+      "description": "Sends real-time event data to Amazon Personalize to improve recommendations. It allows you to track user interactions with your application and use that data to personalize recommendations in real-time."
+    },
+    "personalize-runtime": {
+      "description": "Generates recommendations from Amazon Personalize models in real-time. It allows you to provide personalized recommendations to your users at the moment they need them."
+    },
+    "pi": {
+      "description": "Provides a service that allows you to collect and analyze data from physical devices. It can be used to monitor the health of devices, optimize performance, and predict failures."
+    },
+    "pinpoint": {
+      "description": "Provides a service for customer engagement and marketing automation. It allows you to send targeted messages to your customers across multiple channels, such as email, SMS, push notifications, and in-app messages."
+    },
+    "pinpoint-email": {
+      "description": "Provides a service for sending email campaigns through Amazon Pinpoint. It offers features such as email templates, personalization, and tracking."
+    },
+    "pinpoint-sms-voice": {
+      "description": "Provides a service for sending SMS and voice messages through Amazon Pinpoint. It can be used to send transactional messages, such as appointment reminders and order confirmations, as well as marketing messages."
+    },
+    "pinpoint-sms-voice-v2": "",
+    "pipes": {
+      "description": "Transfers large amounts of data between on-premises storage and AWS storage services. It is optimized for high-speed data transfers and can be used to migrate data to AWS or share data between AWS and on-premises systems."
+    },
+    "polly": {
+      "description": "Turns text into lifelike speech. It supports multiple languages and voices, and can be used to create audiobooks, read text aloud for accessibility, or generate voice prompts for applications."
+    },
+    "pricing": {
+      "description": "Provides access to pricing information for AWS services. It allows you to view current prices, estimate your costs, and compare pricing for different services."
+    },
+    "privatenetworks": {
+      "description": "Creates private networks that connect your on-premises infrastructure to AWS. It allows you to extend your on-premises network to AWS, providing a secure and reliable connection between your resources."
+    },
+    "proton": {
+      "description": "Fully managed deployment service for container and serverless applications. It simplifies the process of deploying and managing applications across multiple AWS accounts and regions."
+    },
+    "qldb": {
+      "description": "Fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. It is designed for applications that require a high degree of data integrity and auditability."
+    },
+    "quicksight": {
+      "description": "Cloud-powered business intelligence service that makes it easy to analyze data and create visualizations. It offers a wide range of features, including data preparation, visual data exploration, and interactive dashboards."
+    },
+    "ram": {
+      "description": "Provides a centralized way to share resources across AWS accounts. It makes it easy to share resources such as Amazon EC2 instances, Amazon S3 buckets, and Amazon RDS databases with other AWS accounts."
+    },
+    "rbin": {
+      "description": "Provides a managed resource-based policy framework for AWS services. It allows you to define and manage policies that control access to AWS resources based on their tags and attributes."
+    },
+    "rds": {
+      "description": "Provides a managed relational database service that makes it easy to set up, operate, and scale a relational database in the cloud."
+    },
+    "redshift": {
+      "description": "Fully managed, petabyte-scale data warehouse service in the cloud. It allows you to quickly and easily analyze all your data using your existing business intelligence tools."
+    },
+    "rekognition": {
+      "description": "Provides image and video analysis using machine learning. It can be used to identify objects, people, text, scenes, and activities in images and videos."
+    },
+    "resiliencehub": {
+      "description": "Assesses the resilience of your applications and recommends improvements. It helps you identify and address potential vulnerabilities in your applications before they cause outages."
+    },
+    "resource-groups": {
+      "description": "Organizes your AWS resources into groups. It allows you to manage and view your resources as a collection, making it easier to track costs, apply policies, and automate tasks."
+    },
+    "resourcegroupstaggingapi": {
+      "description": "Manages tags for AWS resources. It allows you to add, remove, and list tags for your resources, as well as search for resources based on their tags."
+    },
+    "robomaker": {
+      "description": "Provides a service for building, testing, and deploying robotics applications. It includes a robotics development environment, a robotics simulation service, and a robotics fleet management service."
+    },
+    "route53": {
+      "description": "Provides a highly available and scalable Domain Name System (DNS) web service. It translates human-readable domain names (like www.example.com) into the numeric IP addresses that computers use to connect to each other."
+    },
+    "route53domains": {
+      "description": "Provides a managed domain registration service that makes it easy to register, manage, and transfer domain names."
+    },
+    "route53resolver": {
+      "description": "Provides a DNS resolver that you can use to route DNS queries for your VPCs and on-premises networks. It allows you to filter and control DNS traffic, protect against DNS attacks, and improve DNS performance."
+    },
+    "rum": {
+      "description": "Real User Monitoring service that helps you collect, visualize, and analyze user interactions with your web applications. It provides insights into how users are experiencing your applications, so you can identify and address performance issues."
+    },
+    "s3": {
+      "description": "Provides object storage with a simple web service interface to store and retrieve any amount of data from anywhere on the web. It is designed to deliver 99.999999999% durability, and scale past trillions of objects worldwide."
+    },
+    "sagemaker": {
+      "description": "Fully managed service that provides the ability to build, train, and deploy machine learning models quickly and easily. It removes the complexity that is typically associated with machine learning, so you can focus on developing innovative applications."
+    },
+    "secretsmanager": {
+      "description": "Securely stores and manages secrets, such as passwords, access keys, and tokens. It allows you to easily rotate secrets, control access to them, and audit their use."
+    },
+    "securityhub": {
+      "description": "Provides a comprehensive view of your security posture across your AWS accounts. It aggregates security findings from multiple AWS services and third-party partners, and provides a central place to view and manage security alerts and findings."
+    },
+    "securitylake": "",
+    "serverlessrepo": {
+      "description": "Provides a public registry of serverless applications that you can deploy to your AWS account. It makes it easy to find and deploy pre-built applications, as well as share your own applications with others."
+    },
+    "service-quotas": {
+      "description": "Provides visibility into your service quotas and usage limits. It allows you to request quota increases and track your usage to ensure that you are not exceeding your limits."
+    },
+    "servicecatalog": {
+      "description": "Provides a way to create and manage catalogs of IT services that can be provisioned by your users. It allows you to centralize the governance and control of IT services, making it easier to manage and deploy them across your organization."
+    },
+    "servicecatalog-appregistry": "",
+    "servicediscovery": {
+      "description": "Easily discover services in your VPCs and route traffic to them. It allows you to register services with a service registry and then use DNS queries to find the IP addresses of those services."
+    },
+    "ses": {
+      "description": "Provides a cost-effective email service that you can use to send and receive email. It is a reliable, scalable, and secure service that can be used to send marketing emails, transactional emails, and other types of email communications."
+    },
+    "sesv2": "",
+    "shield": {
+      "description": "Managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. It protects against attacks that can cause downtime or slow performance."
+    },
+    "signer": {
+      "description": "Provides a way to sign code and verify signatures. It can be used to ensure the integrity and authenticity of code, as well as to protect against unauthorized modifications."
+    },
+    "simspaceweaver": "",
+    "sms": {
+      "description": "Sends text messages to mobile phones. It can be used to send notifications, alerts, and marketing messages."
+    },
+    "snow-device-management": {
+      "description": "Manages and monitors your AWS Snow Family devices. It allows you to track device location, health, and usage, as well as manage device settings and data."
+    },
+    "snowball": {
+      "description": "Physical data migration service that uses secure devices to transfer large amounts of data into and out of AWS. It is ideal for migrating large datasets, such as video libraries, image repositories, or file archives."
+    },
+    "sns": {
+      "description": "Fully managed pub/sub messaging service that allows you to decouple microservices, distributed systems, and serverless applications. It simplifies the process of sending messages between applications."
+    },
+    "sqs": {
+      "description": "Reliable, highly-scalable hosted queue for storing messages as they travel between applications or microservices. It's a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications."
+    },
+    "ssm": {
+      "description": "Provides a secure way to manage the configuration and settings of your AWS resources. It allows you to automate common maintenance and deployment tasks, such as installing software, patching systems, and configuring servers."
+    },
+    "sso": {
+      "description": "Provides a single sign-on (SSO) solution that makes it easy for your users to access all of their AWS accounts and applications with a single set of credentials."
+    },
+    "sso-admin": "",
+    "sso-oidc": "",
+    "stepfunctions": {
+      "description": "Orchestrates state machines for serverless workflows. It allows you to build complex applications that are resilient, scalable, and easy to manage."
+    },
+    "storagegateway": {
+      "description": "Hybrid cloud storage service that lets you seamlessly connect on-premises file systems with cloud-based storage. It provides low-latency performance for frequently accessed data, while still providing durable, low-cost storage for infrequently accessed data."
+    },
+    "sts": {
+      "description": "Web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users)."
+    },
+    "support": {
+      "description": "Provides you with access to a range of tools and resources that can help you get the most out of AWS. It includes access to technical support engineers, documentation, forums, and other resources."
+    },
+    "synthetics": {
+      "description": "Monitors the availability and performance of your websites and applications from a user's perspective. It can be used to identify and troubleshoot performance issues, as well as to ensure that your applications are meeting your SLAs."
+    },
+    "textract": {
+      "description": "Analyzes documents and extracts text, handwriting, and data from them. It can be used to automate tasks such as data entry, document review, and information extraction."
+    },
+    "transcribe": {
+      "description": "Automatic speech recognition (ASR) service that transcribes speech to text. It can be used to transcribe audio files, live audio streams, and conversations."
+    },
+    "transfer": {
+      "description": "Fully managed service that enables the transfer of files over SFTP, FTPS, and FTP. It's a simple, scalable, and secure way to exchange files with your customers and partners."
+    },
+    "translate": {
+      "description": "Provides natural language translation for a wide range of languages. It can be used to translate text, speech, and websites."
+    },
+    "trustedadvisor": {
+      "description": "Provides real-time guidance to help you optimize your AWS infrastructure, improve security and performance, reduce costs, and monitor service quotas."
+    },
+    "waf": {
+      "description": "Web Application Firewall (WAF) that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources."
+    },
+    "wellarchitected": {
+      "description": "Helps you learn architectural best practices for designing and operating secure, reliable, efficient, cost-effective, and sustainable workloads in the AWS Cloud."
+    },
+    "workdocs": {
+      "description": "Fully managed, secure enterprise storage and sharing service with features like file collaboration, version control, and administrative controls."
+    },
+    "worklink": {
+      "description": "Provides secure access to internal websites and web apps from mobile devices."
+    },
+    "workmail": {
+      "description": "Secure, managed business email and calendar service with support for existing desktop and mobile email clients."
+    },
+    "workspaces": {
+      "description": "Provides cloud-based desktops that can be accessed from anywhere using a web browser, a tablet, or a smartphone."
+    },
+    "xray": {
+      "description": "Analyzes and debugs distributed applications, providing insights into the performance and health of your applications."
+    }
+  }
+}

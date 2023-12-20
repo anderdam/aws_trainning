@@ -17,7 +17,7 @@
   "Question 4": [
     " According to security best practices, how should an Amazon EC2 instance be given access to an Amazon S3 bucket?\n\n    A. Hard code an IAM user’s secret key and access key directly in the application, and upload the file.\n    B. Store the IAM user’s secret key and access key in a text file on the EC2 instance, read the keys, then upload the file.\n    C. Have the EC2 instance assume a role to obtain the privileges to upload the file.\n    D. Modify the S3 bucket policy so that any service can upload to it at any time.\n\n",
     "C",
-    "See: "],
+    "See: https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html"],
   "Question 5": [
     " Which option is a customer responsibility when using Amazon DynamoDB under the AWS Shared Responsibility Model?\n\n    A. Physical security of DynamoDB\n    B. Patching of DynamoDB\n    C. Access to DynamoDB tables\n    D. Encryption of data at rest in DynamoDB ",
     "***",
@@ -30,12 +30,12 @@
   "Question 7": [
     " A company is running and managing its own Docker environment on Amazon EC2 instances. The company wants an alternative to help manage cluster size, scheduling, and environment maintenance.\nWhich AWS service meets these requirements?\n\n    A. AWS Lambda\n    B. Amazon RDS\n    C. AWS Fargate\n    D. Amazon Athena\n\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html"
   ],
   "Question 8": [
     " A company wants to run a NoSQL database on Amazon EC2 instances.\nWhich task is the responsibility of AWS in this scenario?\n\n    A. Update the guest operating system of the EC2 instances.\n    B. Maintain high availability at the database layer.\n    C. Patch the physical infrastructure that hosts the EC2 instances.\n    D. Configure the security group firewall.\n\n",
     "C",
-    "See: "
+    "See: https://aws.amazon.com/compliance/shared-responsibility-model/"
   ],
   "Question 9": [
     " Which AWS services or tools can identify rightsizing opportunities for Amazon EC2 instances? (Choose two.)\n\n    A. AWS Cost Explorer\n    B. AWS Billing Conductor\n    C. Amazon CodeGuru\n    D. Amazon SageMaker\n    E. AWS Compute Optimizer ",
@@ -45,7 +45,7 @@
   "Question 10": [
     " Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)\n\n    A. Providing high-performance container orchestration\n    B. Creating and rotating encryption keys\n    C. Detecting underutilized resources to save costs\n    D. Improving security by proactively monitoring the AWS environment\n    E. Implementing enforced tagging across AWS resources\n\n",
     "C/D",
-    "See: "
+    "See: https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html"
   ],
   "Question 11": [
     " Which of the following is an advantage that users experience when they move on-premises workloads to the AWS Cloud?\n\n    A. Elimination of expenses for running and maintaining data centers\n    B. Price discounts that are identical to discounts from hardware providers\n    C. Distribution of all operational controls to AWS\n    D. Elimination of operational expenses\n\n",
@@ -55,17 +55,17 @@
   "Question 12": [
     " A company wants to manage deployed IT services and govern its infrastructure as code (IaC) templates.\nWhich AWS service will meet this requirement?\n\n    A. AWS Resource Explorer\n    B. AWS Service Catalog\n    C. AWS Organizations\n    D. AWS Systems Manager\n\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html"
   ],
   "Question 13": [
     " Which AWS service or tool helps users visualize, understand, and manage spending and usage over time?\n\n    A. AWS Organizations\n    B. AWS Pricing Calculator\n    C. AWS Cost Explorer\n    D. AWS Service Catalog\n\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html"
   ],
   "Question 14": [
     " A company is using a central data platform to manage multiple types of data for its customers. The company wants to use AWS services to discover, transform, and visualize the data.\nWhich combination of AWS services should the company use to meet these requirements? (Choose two.)\n\n    A. AWS Glue\n    B. Amazon Elastic File System (Amazon EFS)\n    C. Amazon Redshift\n    D. Amazon QuickSight\n    E. Amazon Quantum Ledger Database (Amazon QLDB)\n\n",
     "A/D",
-    "See: "
+    "See: https://docs.aws.amazon.com/glue/ \nhttps://docs.aws.amazon.com/quicksight/"
   ],
   "Question 15": [
     " A global company wants to migrate its third-party applications to the AWS Cloud. The company wants help from a global team of experts to complete the migration faster and more reliably in accordance with AWS internal best practices.\nWhich AWS service or resource will meet these requirements?\n\n    A. AWS Support\n    B. AWS Professional Services\n    C. AWS Launch Wizard\n    D. AWS Managed Services (AMS)\n\n",
@@ -90,7 +90,7 @@
   "Question 19": [
     "Which AWS service provides the ability to manage infrastructure as code?\nA. AWS CodePipeline\nB. AWS CodeDeploy\nC. AWS Direct Connect\nD. AWS CloudFormation\n",
     "D",
-    "See: "
+    "See: https://docs.aws.amazon.com/cloudformation/"
   ],
   "Question 20": [
     "An online gaming company needs to choose a purchasing option to run its Amazon EC2 instances for 1 year. The web traffic is consistent, and any increases in traffic are predictable. The EC2 instances must be online and available without any disruption.\nWhich EC2 instance purchasing option will meet these requirements MOST cost-effectively?\nA. On-Demand Instances\nB. Reserved Instances\nC. Spot Instances\nD. Spot Fleet\n",
@@ -115,7 +115,7 @@
   "Question 24": [
     "What is the purpose of having an internet gateway within a VPC?\nA. To create a VPN connection to the VPC\nB. To allow communication between the VPC and the internet\nC. To impose bandwidth constraints on internet traffic\nD. To load balance traffic from the internet across Amazon EC2 instances\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
   ],
   "Question 25": [
     "A company is running a monolithic on-premises application that does not scale and is difficult to maintain. The company has a plan to migrate the application to AWS and divide the application into microservices.\nWhich best practice of the AWS Well-Architected Framework is the company following with this plan?\nA. Integrate functional testing as part of AWS deployment.\nB. Use automation to deploy changes.\nC. Deploy the application to multiple locations.\nD. Implement loosely coupled dependencies.\n",
@@ -125,7 +125,7 @@
   "Question 26": [
     "A company has an AWS account. The company wants to audit its password and access key rotation details for compliance purposes.\nWhich AWS service or tool will meet this requirement?\nA. IAM Access Analyzer\nB. AWS Artifact\nC. IAM credential report\nD. AWS Audit Manager\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html"
   ],
   "Question 27": [
     "A company wants to receive a notification when a specific AWS cost threshold is reached.\nWhich AWS services or tools can the company use to meet this requirement? (Choose two.)\nA. Amazon Simple Queue Service (Amazon SQS)\nB. AWS Budgets\nC. Cost Explorer\nD. Amazon CloudWatch\nE. AWS Cost and Usage Report\n",
@@ -135,7 +135,7 @@
   "Question 28": [
     "Which AWS service or resource provides answers to the most frequently asked security-related questions that AWS receives from its users?\nA. AWS Artifact\nB. Amazon Connect\nC. AWS Chatbot\nD. AWS Knowledge Center\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/artifact/"
   ],
   "Question 29": [
     "Which tasks are customer responsibilities, according to the AWS shared responsibility model? (Choose two.)\nA. Configure the AWS provided security group firewall.\nB. Classify company assets in the AWS Cloud.\nC. Determine which Availability Zones to use for Amazon S3 buckets.\nD. Patch or upgrade Amazon DynamoDB.\nE. Select Amazon EC2 instances to run AWS Lambda on.\n",
@@ -145,12 +145,12 @@
   "Question 30": [
     "Which of the following are pillars of the AWS Well-Architected Framework? (Choose two.)\nA. Availability\nB. Reliability\nC. Scalability\nD. Responsive design\nE. Operational excellence\n",
     "BE",
-    "See: "
+    "See: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
   ],
   "Question 31": [
     "Which AWS service or feature is used to send both text and email messages from distributed applications?\nA. Amazon Simple Notification Service (Amazon SNS)\nB. Amazon Simple Email Service (Amazon SES)\nC. Amazon CloudWatch alerts\nD. Amazon Simple Queue Service (Amazon SQS)\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/sns/latest/dg/welcome.html"
   ],
   "Question 32": [
     "A user needs programmatic access to AWS resources through the AWS CLI or the AWS API.\nWhich option will provide the user with the appropriate access?\nA. Amazon Inspector\nB. Access keys\nC. SSH public keys\nD. AWS Key Management Service (AWS KMS) keys\n",
@@ -165,17 +165,17 @@
   "Question 34": [
     "What does the concept of agility mean in AWS Cloud computing? (Choose two.)\nA. The speed at which AWS resources are implemented\nB. The speed at which AWS creates new AWS Regions\nC. The ability to experiment quickly\nD. The elimination of wasted capacity\nE. The low cost of entry into cloud computing\n",
     "AC",
-    "See: "
+    "See: https://aws.amazon.com/what-is-cloud-computing/"
   ],
   "Question 35": [
     "A company needs to block SQL injection attacks.\nWhich AWS service or feature can meet this requirement?\nA. AWS WAF\nB. AWS Shield\nC. Network ACLs\nD. Security groups\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html"
   ],
   "Question 36": [
     "Which AWS service or feature identifies whether an Amazon S3 bucket or an IAM role has been shared with an external entity?\nA. AWS Service Catalog\nB. AWS Systems Manager\nC. AWS IAM Access Analyzer\nD. AWS Organizations\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html"
   ],
   "Question 37": [
     "A cloud practitioner needs to obtain AWS compliance reports before migrating an environment to the AWS Cloud.\nHow can these reports be generated?\nA. Contact the AWS Compliance team.\nB. Download the reports from AWS Artifact.\nC. Open a case with AWS Support.\nD. Generate the reports with Amazon Macie.\n",
@@ -190,7 +190,7 @@
   "Question 39": [
     "A company is setting up AWS Identity and Access Management (IAM) on an AWS account.\nWhich recommendation complies with IAM security best practices?\nA. Use the account root user access keys for administrative tasks.\nB. Grant broad permissions so that all company employees can access the resources they need.\nC. Turn on multi-factor authentication (MFA) for added security during the login process.\nD. Avoid rotating credentials to prevent issues in production applications.\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
   ],
   "Question 40": [
     "Elasticity in the AWS Cloud refers to which of the following? (Choose two.)\nA. How quickly an Amazon EC2 instance can be restarted\nB. The ability to rightsize resources as demand shifts\nC. The maximum amount of RAM an Amazon EC2 instance can use\nD. The pay-as-you-go billing model\nE. How easily resources can be procured when they are needed\n",
@@ -200,17 +200,17 @@
   "Question 41": [
     "Which service enables customers to audit API calls in their AWS accounts?\nA. AWS CloudTrail\nB. AWS Trusted Advisor\nC. Amazon Inspector\nD. AWS X-Ray\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/cloudtrail/"
   ],
   "Question 42": [
     "What is a customer responsibility when using AWS Lambda according to the AWS shared responsibility model?\nA. Managing the code within the Lambda function\nB. Confirming that the hardware is working in the data center\nC. Patching the operating system\nD. Shutting down Lambda functions when they are no longer in use\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/lambda/"
   ],
   "Question 43": [
     "A company has 5 TB of data stored in Amazon S3. The company plans to occasionally run queries on the data for analysis.\nWhich AWS service should the company use to run these queries in the MOST cost-effective manner?\nA. Amazon Redshift\nB. Amazon Athena\nC. Amazon Kinesis\nD. Amazon RDS\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/athena/latest/ug/what-is.html"
   ],
   "Question 44": [
     "Which AWS service can be used at no additional cost?\nA. Amazon SageMaker\nB. AWS Config\nC. AWS Organizations\nD. Amazon CloudWatch\n",
@@ -220,12 +220,12 @@
   "Question 45": [
     "Which AWS Cloud Adoption Framework (AWS CAF) capability belongs to the people perspective?\nA. Data architecture\nB. Event management\nC. Cloud fluency\nD. Strategic partnership\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspective/cloud-fluency.html"
   ],
   "Question 46": [
     "A company wants to make an upfront commitment for continued use of its production Amazon EC2 instances in exchange for a reduced overall cost.\nWhich pricing options meet these requirements with the LOWEST cost? (Choose two.)\nA. Spot Instances\nB. On-Demand Instances\nC. Reserved Instances\nD. Savings Plans\nE. Dedicated Hosts\n",
     "CD",
-    "See: "
+    "See: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html \nhttps://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html"
   ],
   "Question 47": [
     "A company wants to migrate its on-premises relational databases to the AWS Cloud. The company wants to use infrastructure as close to its current geographical location as possible.\nWhich AWS service or resource should the company use to select its Amazon RDS deployment area?\nA. Amazon Connect\nB. AWS Wavelength\nC. AWS Regions\nD. AWS Direct Connect\n",
@@ -235,7 +235,7 @@
   "Question 48": [
     "A company is exploring the use of the AWS Cloud, and needs to create a cost estimate for a project before the infrastructure is provisioned.\nWhich AWS service or feature can be used to estimate costs before deployment?\nA. AWS Free Tier\nB. AWS Pricing Calculator\nC. AWS Billing and Cost Management\nD. AWS Cost and Usage Report\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html"
   ],
   "Question 49": [
     "A company is building an application that needs to deliver images and videos globally with minimal latency.\nWhich approach can the company use to accomplish this in a cost effective manner?\nA. Deliver the content through Amazon CloudFront.\nB. Store the content on Amazon S3 and enable S3 cross-region replication.\nC. Implement a VPN across multiple AWS Regions.\nD. Deliver the content through AWS PrivateLink.\n",
@@ -245,7 +245,7 @@
   "Question 50": [
     "Which option is a benefit of the economies of scale based on the advantages of cloud computing?\nA. The ability to trade variable expense for fixed expense\nB. Increased speed and agility\nC. Lower variable costs over fixed costs\nD. eased operational costs across data centers\n",
     "C",
-    "See: "
+    "See: https://aws.amazon.com/application-hosting/benefits/"
   ],
   "Question 51": [
     "Which of the following is a software development framework that a company can use to define cloud resources as code and provision the resources through AWS CloudFormation?\nA. AWS CLI\nB. AWS Developer Center\nC. AWS Cloud Development Kit (AWS CDK)\nD. AWS CodeStar\n",
@@ -255,12 +255,12 @@
   "Question 52": [
     "A company is developing an application that uses multiple AWS services. The application needs to use temporary, limited-privilege credentials for authentication with other AWS APIs.\nWhich AWS service or feature should the company use to meet these authentication requirements?\nA. Amazon API Gateway\nB. IAM users\nC. AWS Security Token Service (AWS STS)\nD. IAM instance profiles\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html"
   ],
   "Question 53": [
     "Which AWS service is a cloud security posture management (CSPM) service that aggregates alerts from various AWS services and partner products in a standardized format?\nA. AWS Security Hub\nB. AWS Trusted Advisor\nC. Amazon EventBridge\nD. Amazon GuardDuty\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html"
   ],
   "Question 54": [
     "Which AWS service is always provided at no charge?\nA. Amazon S3\nB. AWS Identity and Access Management (IAM)\nC. Elastic Load Balancers\nD. AWS WAF\n",
@@ -270,7 +270,7 @@
   "Question 55": [
     "To reduce costs, a company is planning to migrate a NoSQL database to AWS.\nWhich AWS service is fully managed and can automatically scale throughput capacity to meet database workload demands?\nA. Amazon Redshift\nB. Amazon Aurora\nC. Amazon DynamoDB\nD. Amazon RDS\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/dynamodb/"
   ],
   "Question 56": [
     "A company is using Amazon DynamoDB.\nWhich task is the company’s responsibility, according to the AWS shared responsibility model?\nA. Patch the operating system.\nB. Provision hosts.\nC. Manage database access permissions.\nD. Secure the operating system.\n",
@@ -280,7 +280,7 @@
   "Question 57": [
     "A company has a test AWS environment. A company is planning on testing an application within AWS. The application testing can be interrupted and does not need to run continuously.\nWhich Amazon EC2 purchasing option will meet these requirements MOST cost-effectively?\nA. On-Demand Instances\nB. Dedicated Instances\nC. Spot Instances\nD. Reserved Instances\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html"
   ],
   "Question 58": [
     "Which AWS service gives users the ability to discover and protect sensitive data that is stored in Amazon S3 buckets?\nA. Amazon Macie\nB. Amazon Detective\nC. Amazon GuardDuty\nD. AWS IAM Access Analyzer\n",
@@ -315,7 +315,7 @@
   "Question 64": [
     "A company wants to provide managed Windows virtual desktops and applications to its remote employees over secure network connections.\nWhich AWS services can the company use to meet these requirements? (Choose two.)\nA. Amazon Connect\nB. Amazon AppStream 2.0\nC. Amazon WorkSpaces\nD. AWS Site-to-Site VPN\nE. Amazon Elastic Container Service (Amazon ECS)\n",
     "BC",
-    "See: "
+    "See: https://docs.aws.amazon.com/appstream2/latest/developerguide/what-is-appstream.html \nhttps://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html"
   ],
   "Question 65": [
     "A company wants to monitor for misconfigured security groups that are allowing unrestricted access to specific ports.\nWhich AWS service will meet this requirement?\nA. AWS Trusted Advisor\nB. Amazon CloudWatch\nC. Amazon GuardDuty\nD. AWS Health Dashboard\n",
@@ -325,7 +325,7 @@
   "Question 66": [
     "Which AWS service is a key-value database that provides sub-millisecond latency on a large scale?\nA. Amazon DynamoDB\nB. Amazon Aurora\nC. Amazon DocumentDB (with MongoDB compatibility)\nD. Amazon Neptune\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/dynamodb/"
   ],
   "Question 67": [
     "A company is deploying a machine learning (ML) research project that will require a lot of compute power over several months. The ML processing jobs do not need to run at specific times.\nWhich Amazon EC2 instance purchasing option will meet these requirements at the lowest cost?\nA. On-Demand Instances\nB. Spot Instances\nC. Reserved Instances\nD. Dedicated Instances\n",
@@ -335,17 +335,17 @@
   "Question 68": [
     "Which AWS services or features provide disaster recovery solutions for Amazon EC2 instances? (Choose two.)\nA. EC2 Reserved Instances\nB. EC2 Amazon Machine Images (AMIs)\nC. Amazon Elastic Block Store (Amazon EBS) snapshots\nD. AWS Shield\nE. Amazon GuardDuty\n",
     "BC",
-    "See: "
+    "See: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html \nhttps://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html"
   ],
   "Question 69": [
     "Which AWS service provides command line access to AWS tools and resources directly from a web browser?\nA. AWS CloudHSM\nB. AWS CloudShell\nC. Amazon WorkSpaces\nD. AWS Cloud Map\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html"
   ],
   "Question 70": [
     "A network engineer needs to build a hybrid cloud architecture connecting on-premises networks to the AWS Cloud using AWS Direct Connect. The company has a few VPCs in a single AWS Region and expects to increase the number of VPCs to hundreds over time.\nWhich AWS service or feature should the engineer use to simplify and scale this connectivity as the VPCs increase in number?\nA. VPC endpoints\nB. AWS Transit Gateway\nC. Amazon Route 53\nD. AWS Secrets Manager\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html"
   ],
   "Question 71": [
     "A company wants to assess its operational readiness. It also wants to identify and mitigate any operational risks ahead of a new product launch.\nWhich AWS Support plan offers guidance and support for this kind of event at no additional charge?\nA. AWS Business Support\nB. AWS Basic Support\nC. AWS Developer Support\nD. AWS Enterprise Support\n",
@@ -355,7 +355,7 @@
   "Question 72": [
     "A company wants to establish a schedule for rotating database user credentials.\nWhich AWS service will support this requirement with the LEAST amount of operational overhead?\nA. AWS Systems Manager\nB. AWS Secrets Manager\nC. AWS License Manager\nD. AWS Managed Services\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/secretsmanager/"
   ],
   "Question 73": [
     "Which AWS service or feature can be used to create a private connection between an on-premises workload and an AWS Cloud workload?\nA. Amazon Route 53\nB. Amazon Macie\nC. AWS Direct Connect\nD. AWS PrivateLink\n",
@@ -375,7 +375,7 @@
   "Question 76": [
     "Which of the following are advantages of the AWS Cloud? (Choose two.)\nA. Trade variable expenses for capital expenses\nB. High economies of scale\nC. Launch globally in minutes\nD. Focus on managing hardware infrastructure\nE. Overprovision to ensure capacity\n",
     "BC",
-    "See: "
+    "See: https://aws.amazon.com/application-hosting/benefits/"
   ],
   "Question 77": [
     "Which AWS Cloud benefit is shown by an architecture’s ability to withstand failures with minimal downtime?\nA. Agility\nB. Elasticity\nC. Scalability\nD. High availability\n",
@@ -385,17 +385,17 @@
   "Question 78": [
     "A developer needs to maintain a development environment infrastructure and a production environment infrastructure in a repeatable fashion.\nWhich AWS service should the developer use to meet these requirements?\nA. AWS Ground Station\nB. AWS Shield\nC. AWS IoT Device Defender\nD. AWS CloudFormation\n",
     "D",
-    "See: "
+    "See: https://docs.aws.amazon.com/cloudformation/"
   ],
   "Question 79": [
     "Which task is the customer’s responsibility, according to the AWS shared responsibility model?\nA. Maintain the security of the AWS Cloud.\nB. Configure firewalls and networks.\nC. Patch the operating system of Amazon RDS instances.\nD. Implement physical and environmental controls.\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-amazon-eks/aws-shared-responsibility-model.html"
   ],
   "Question 80": [
     "Which AWS service helps deliver highly available applications with fast failover for multi-Region and Multi-AZ architectures?\nA. AWS WAF\nB. AWS Global Accelerator\nC. AWS Shield\nD. AWS Direct Connect\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/global-accelerator/latest/dg/what-is-global-accelerator.html"
   ],
   "Question 81": [
     "A company has a set of ecommerce applications. The applications need to be able to send messages to each other.\nWhich AWS service meets this requirement?\nA. AWS Auto Scaling\nB. Elastic Load Balancing\nC. Amazon Simple Queue Service (Amazon SQS)\nD. Amazon Kinesis Data Streams\n",
@@ -415,12 +415,12 @@
   "Question 84": [
     "What is the best resource for a user to find compliance-related information and reports about AWS?\nA. AWS Artifact\nB. AWS Marketplace\nC. Amazon Inspector\nD. AWS Support\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html"
   ],
   "Question 85": [
     "Which AWS service enables companies to deploy an application close to end users?\nA. Amazon CloudFront\nB. AWS Auto Scaling\nC. AWS AppSync\nD. Amazon Route 53\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html"
   ],
   "Question 86": [
     "Which AWS service or feature improves network performance by sending traffic through the AWS worldwide network infrastructure?\nA. Route table\nB. AWS Transit Gateway\nC. AWS Global Accelerator\nD. Amazon VPC\n",
@@ -445,7 +445,7 @@
   "Question 90": [
     "Which AWS service is a hybrid cloud storage service that provides on-premises users access to virtually unlimited cloud storage?\nA. AWS DataSync\nB. Amazon S3 Glacier\nC. AWS Storage Gateway\nD. Amazon Elastic Block Store (Amazon EBS)\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/storagegateway/"
   ],
   "Question 91": [
     "A company plans to migrate to AWS and wants to create cost estimates for its AWS use cases.\nWhich AWS service or tool can the company use to meet these requirements?\nA. AWS Pricing Calculator\nB. Amazon CloudWatch\nC. AWS Cost Explorer\nD. AWS Budgets\n",
@@ -460,7 +460,7 @@
   "Question 93": [
     "Which of the following is a recommended design principle of the AWS Well-Architected Framework?\nA. Reduce downtime by making infrastructure changes infrequently and in large increments.\nB. Invest the time to configure infrastructure manually.\nC. Learn to improve from operational failures.\nD. Use monolithic application design for centralization.\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
   ],
   "Question 94": [
     "Using AWS Identity and Access Management (IAM) to grant access only to the resources needed to perform a task is a concept known as:\nA. restricted access.\nB. as-needed access.\nC. least privilege access.\nD. token access.\n",
@@ -480,12 +480,12 @@
   "Question 97": [
     "How does AWS Cloud computing help businesses reduce costs? (Choose two.)\nA. AWS charges the same prices for services in every AWS Region.\nB. AWS enables capacity to be adjusted on demand.\nC. AWS offers discounts for Amazon EC2 instances that remain idle for more than 1 week.\nD. AWS does not charge for data sent from the AWS Cloud to the internet.\nE. AWS eliminates many of the costs of building and maintaining on-premises data centers.\n",
     "BE",
-    "See: "
+    "See: https://aws.amazon.com/aws-cost-management/cost-optimization/"
   ],
   "Question 98": [
     "A company wants to grant users in one AWS account access to resources in another AWS account. The users do not currently have permission to access the resources.\nWhich AWS service will meet this requirement?\nA. IAM group\nB. IAM role\nC. IAM tag\nD. IAM Access Analyzer\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html"
   ],
   "Question 99": [
     "Which task is the responsibility of AWS when using AWS services?\nA. Management of IAM user permissions\nB. Creation of security group rules for outbound access\nC. Maintenance of physical and environmental controls\nD. Application of Amazon EC2 operating system patches\n",
@@ -500,17 +500,17 @@
   "Question 101": [
     "Which option is an AWS Cloud Adoption Framework (AWS CAF) platform perspective capability?\nA. Data architecture\nB. Data protection\nC. Data governance\nD. Data science\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html"
   ],
   "Question 102": [
     "A company is running a workload in the AWS Cloud.\nWhich AWS best practice ensures the MOST cost-effective architecture for the workload?\nA. Loose coupling\nB. Rightsizing\nC. Caching\nD. Redundancy\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/cost-management/latest/userguide/ce-rightsizing.html"
   ],
   "Question 103": [
     "A company is using a third-party service to back up 10 TB of data to a tape library. The on-premises backup server is running out of space. The company wants to use AWS services for the backups without changing its existing backup workflows.\nWhich AWS service should the company use to meet these requirements?\nA. Amazon Elastic Block Store (Amazon EBS)\nB. AWS Storage Gateway\nC. Amazon Elastic Container Service (Amazon ECS)\nD. AWS Lambda\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/storagegateway/"
   ],
   "Question 104": [
     "Which AWS tool gives users the ability to plan their service usage, service costs, and instance reservations, and also allows them to set custom alerts when their costs or usage exceed established thresholds?\nA. Cost Explorer\nB. AWS Budgets\nC. AWS Cost and Usage Report\nD. Reserved Instance reporting\n",
@@ -525,7 +525,7 @@
   "Question 106": [
     "A developer has been hired by a large company and needs AWS credentials.\nWhich are security best practices that should be followed? (Choose two.)\nA. Grant the developer access to only the AWS resources needed to perform the job.\nB. Share the AWS account root user credentials with the developer.\nC. Add the developer to the administrator’s group in AWS IAM.\nD. Configure a password policy that ensures the developer’s password cannot be changed.\nE. Ensure the account password policy requires a minimum length.\n",
     "AE",
-    "See: "
+    "See: https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
   ],
   "Question 107": [
     "A company has multiple AWS accounts that include compute workloads that cannot be interrupted. The company wants to obtain billing discounts that are based on the company’s use of AWS services.\nWhich AWS feature or purchasing option will meet these requirements?\nA. Resource tagging\nB. Consolidated billing\nC. Pay-as-you-go pricing\nD. Spot Instances\n",
@@ -545,7 +545,7 @@
   "Question 110": [
     "A company wants to migrate its NFS on-premises workload to AWS.\nWhich AWS Storage Gateway type should the company use to meet this requirement?\nA. Tape Gateway\nB. Volume Gateway\nC. Amazon FSx File Gateway\nD. Amazon S3 File Gateway\n",
     "D",
-    "See: "
+    "See: https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html"
   ],
   "Question 111": [
     "A company needs to track the activity in its AWS accounts, and needs to know when an API call is made against its AWS resources.\nWhich AWS tool or service can be used to meet these requirements?\nA. Amazon CloudWatch\nB. Amazon Inspector\nC. AWS CloudTrail\nD. AWS IAM\n",
@@ -565,12 +565,12 @@
   "Question 114": [
     "A company is planning its migration to the AWS Cloud. The company is identifying its capability gaps by using the AWS Cloud Adoption Framework (AWS CAF) perspectives.\nWhich phase of the cloud transformation journey includes these identification activities?\nA. Envision\nB. Align\nC. Scale\nD. Launch\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/whitepapers/latest/overview-aws-cloud-adoption-framework/welcome.html"
   ],
   "Question 115": [
     "A social media company wants to protect its web application from common web exploits such as SQL injections and cross-site scripting.\nWhich AWS service will meet these requirements?\nA. Amazon Inspector\nB. AWS WAF\nC. Amazon GuardDuty\nD. Amazon CloudWatch\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/waf/latest/developerguide/what-is-aws-waf.html"
   ],
   "Question 116": [
     "Which fully managed AWS service assists with the creation, testing, and management of custom Amazon EC2 images?\nA. EC2 Image Builder\nB. Amazon Machine Image (AMI)\nC. AWS Launch Wizard\nD. AWS Elastic Beanstalk\n",
@@ -580,7 +580,7 @@
   "Question 117": [
     "A company wants an automated process to continuously scan its Amazon EC2 instances for software vulnerabilities.\nWhich AWS service will meet these requirements?\nA. Amazon GuardDuty\nB. Amazon Inspector\nC. Amazon Detective\nD. Amazon Cognito\n",
     "B",
-    "See: "
+    "See: https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html"
   ],
   "Question 118": [
     "A company needs to perform data processing once a week that typically takes about 5 hours to complete.\nWhich AWS service should the company use for this workload?\nA. AWS Lambda\nB. Amazon EC2\nC. AWS CodeDeploy\nD. AWS Wavelength\n",
@@ -590,12 +590,12 @@
   "Question 119": [
     "Which AWS service or feature provides log information of the inbound and outbound traffic on network interfaces in a VPC?\nA. Amazon CloudWatch Logs\nB. AWS CloudTrail\nC. VPC Flow Logs\nD. AWS Identity and Access Management (IAM)\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html"
   ],
   "Question 120": [
     "A company wants to design a centralized storage system to manage the configuration data and passwords for its critical business applications.\nWhich AWS service or capability will meet these requirements MOST cost-effectively?\nA. AWS Systems Manager Parameter Store\nB. AWS Secrets Manager\nC. AWS Config\nD. Amazon S3\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html"
   ],
   "Question 121": [
     "A company plans to deploy containers on AWS. The company wants full control of the compute resources that host the containers. Which AWS service will meet these requirements?\nA. Amazon Elastic Kubernetes Service (Amazon EKS)\nB. AWS Fargate\nC. Amazon EC2\nD. Amazon Elastic Container Service (Amazon ECS)\n",
@@ -610,7 +610,7 @@
   "Question 123": [
     "A company wants to store and retrieve files in Amazon S3 for its existing on-premises applications by using industry-standard file system protocols.\nWhich AWS service will meet these requirements?\nA. AWS DataSync\nB. AWS Snowball Edge\nC. Amazon S3 File Gateway\nD. AWS Transfer Family\n",
     "C",
-    "See: "
+    "See: https://docs.aws.amazon.com/filegateway/latest/files3/what-is-file-s3.html"
   ],
   "Question 124": [
     "A company wants to block SQL injection attacks.\nWhich AWS service or feature should the company use to meet this requirement?\nA. AWS WAF\nB. Network ACLs\nC. Security groups\nD. AWS Certificate Manager (ACM)\n",
@@ -620,6 +620,6 @@
   "Question 125": [
     "A company wants a unified tool to provide a consistent method to interact with AWS services.\nWhich AWS service or tool will meet this requirement?\nA. AWS CLI\nB. Amazon Elastic Container Service (Amazon ECS)\nC. AWS Cloud9\nD. AWS Virtual Private Network (AWS VPN)\n",
     "A",
-    "See: "
+    "See: https://docs.aws.amazon.com/cli/"
   ]
 }

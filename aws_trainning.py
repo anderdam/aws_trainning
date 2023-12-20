@@ -33,8 +33,8 @@ def shuffled_questions():
 def score(hit, mistake):
     return f"""
     #########################################
-    ###              Score                ### 
-    ###         Hits {len(hit)} X {len(mistake)} Mistakes       ###
+                     Score                    
+                Hits {len(hit)} X {len(mistake)} Mistakes          
     #########################################
     """
 
